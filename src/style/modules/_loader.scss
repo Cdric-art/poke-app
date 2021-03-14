@@ -1,0 +1,40 @@
+.App.loader {
+  height: 100vh;
+
+  background-image: url("../../assets/images/background.jpg");
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 3px 3px rgba(50, 50, 70, .5);
+
+  transition: all .5s ease-in-out;
+}
+
+.App.loader span {
+  margin: 0 15px;
+  animation: span 2s ease-in infinite alternate;
+}
+
+.App.loader .letter {
+  height: 27px;
+  width: 27px;
+  border: 3px solid #ffffff;
+  border-radius: 14px;
+  animation: letter 2s ease-in-out infinite alternate;
+  box-shadow: 3px 3px rgba(50, 50, 70, .5);
+}
+
+@keyframes span {
+  0%,30%{ margin: 0 15px; }
+  70%,100%{ margin: 0 5px; }
+}
+@keyframes letter {
+  0%,30%{ width: 27px; }
+  70%,100%{ width: 30vw; }
+}
