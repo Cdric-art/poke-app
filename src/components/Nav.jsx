@@ -1,10 +1,14 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
     return (
-        <div>
-            Mes liens
-        </div>
+        <nav>
+            <ul>
+                <NavLink to="/pokedex">Vers Pokedex</NavLink>
+                <NavLink to="/map">Vers Map</NavLink>
+            </ul>
+        </nav>
     );
 };
 
