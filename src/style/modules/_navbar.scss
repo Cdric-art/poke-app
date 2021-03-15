@@ -1,0 +1,21 @@
+.navbar {
+
+  ul {
+    margin-top: 100px;
+  }
+
+  li {
+    margin: 30px;
+  }
+
+  img {
+    height: 70px;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}

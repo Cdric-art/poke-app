@@ -1,0 +1,128 @@
+.link-home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+}
+
+.pokedex {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/images/background3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .search {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+
+    input {
+      font-size: 1.1rem;
+      text-align: center;
+      width: 100%;
+      padding: 9px 0;
+      border: 1px solid white;
+      border-radius: 5px;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+  }
+
+  .results {
+    margin-bottom: 20px;
+    width: 70%;
+
+    .all-results {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: .4rem;
+      border: 1px solid white;
+      border-radius: 5px;
+
+      div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+
+      li, span {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: .5rem 1rem;
+        cursor: pointer;
+      }
+
+
+      li:first-letter {
+        text-transform: capitalize;
+      }
+
+    }
+    .switch {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      p {
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+
+    .search-results {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .image {
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 1px solid white;
+        border-radius: 5px;
+
+        img {
+          width: 200px;
+        }
+      }
+
+      .details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: self-start;
+        grid-gap: 20px;
+        margin-top: 30px;
+
+        h2 {
+          color: white;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .types,
+        .abilities {
+          border: 1px solid white;
+          border-radius: 5px;
+          background-color: rgba(255, 255, 255, 0.8);
+
+          ul {
+            font-size: 1.1rem;
+            padding: .5rem 1rem;
+          }
+
+          li {
+            padding-top: .4rem;
+          }
+
+          li:first-letter {
+            text-transform: capitalize;
+          }
+        }
+      }
+
+    }
+  }
+
+}

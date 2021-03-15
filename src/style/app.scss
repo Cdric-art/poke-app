@@ -11,11 +11,17 @@
 
 // Generic
 // ===============
+html {
+  font-family: sans-serif;
+}
 
 
 // Pages
 // ===============
+@import "pages/home";
+@import "pages/pokedex";
 
 // Modules
 // ===============
 @import "modules/loader";
+@import "modules/navbar";
