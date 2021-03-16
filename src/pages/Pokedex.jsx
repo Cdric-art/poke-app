@@ -13,7 +13,7 @@ const Pokedex = () => {
     const [offset, setOffset] = useState(0)
 
     useEffect(() => {
-        apiFetch(`/pokemon?offset=${offset}&limit=10`)
+        apiFetch(`/pokemon?offset=${offset}&limit=9`)
             .then(res => setData(res))
             .catch(e => console.error(e))
     }, [offset])
@@ -28,11 +28,11 @@ const Pokedex = () => {
     };
 
     const handleNext = () => {
-        setOffset(offset + 10)
+        setOffset(offset + 9)
     };
 
     const handlePrevious = () => {
-        setOffset(offset - 10)
+        setOffset(offset - 9)
     }
 
     return (
