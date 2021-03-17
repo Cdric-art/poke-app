@@ -7,18 +7,14 @@ import Map from '../assets/icons/map.png';
 const Nav = () => {
     return (
         <nav className="navbar">
-            <ul>
-                <li>
-                    <NavLink to="/pokedex">
-                        <img src={Poke} alt="Pokedex"/>
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink to="/map">
-                        <img src={Map} alt="Map"/>
-                    </NavLink>
-                </li>
-            </ul>
+            <div>
+                <NavLink to="/pokedex">
+                    <img src={Poke} alt="Pokedex"/>
+                </NavLink>
+                <NavLink to="/map">
+                    <img src={Map} alt="Map"/>
+                </NavLink>
+            </div>
         </nav>
     );
 };

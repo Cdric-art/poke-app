@@ -1,15 +1,14 @@
 .navbar {
 
-  ul {
-    margin-top: 100px;
-  }
-
-  li {
-    margin: 30px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
   }
 
   img {
-    height: 70px;
+    height: 50px;
     cursor: pointer;
     transition: all .3s;
 

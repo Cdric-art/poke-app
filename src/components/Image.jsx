@@ -12,8 +12,6 @@ const Image = ({ id }) => {
             .catch(e => console.error(e))
     }, [id])
 
-    console.log(data)
-
     return data && (
         <>
             <img src={data.sprites.front_default} alt={data.name}/>
